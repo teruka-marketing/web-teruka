@@ -570,6 +570,161 @@ footer {
 .footer-copy { font-size: 0.72rem; color: rgba(255, 255, 255, 0.25); }
 
 /* ============================================
+   MENÚ HAMBURGUESA (mobile)
+============================================ */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+.nav-hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--black);
+  transition: all 0.3s;
+}
+
+.nav-mobile {
+  display: none;
+  position: fixed;
+  top: 0; right: 0;
+  width: 280px;
+  height: 100vh;
+  background: var(--white);
+  z-index: 200;
+  padding: 2rem 2rem;
+  flex-direction: column;
+  gap: 2rem;
+  box-shadow: -4px 0 20px rgba(0,0,0,0.1);
+}
+.nav-mobile.open { display: flex; }
+.nav-mobile ul { list-style: none; display: flex; flex-direction: column; gap: 0; }
+.nav-mobile ul li a {
+  display: block;
+  padding: 1rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--black);
+  text-decoration: none;
+  border-bottom: 1px solid var(--gray-mid);
+  letter-spacing: 0.05em;
+}
+.nav-mobile .nav-cta { width: 100%; text-align: center; padding: 0.9rem; }
+.nav-mobile-close {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--gray-text);
+  align-self: flex-end;
+}
+
+.nav-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 199;
+}
+.nav-overlay.open { display: block; }
+
+/* ============================================
+   RESPONSIVE — TABLET (max 1024px)
+============================================ */
+@media (max-width: 1024px) {
+  nav { padding: 1rem 2rem; }
+
+  #hero { padding: 0 2rem; padding-top: 5rem; }
+
+  #servicios { padding: 5rem 2rem; }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .service-card.featured { grid-column: span 2; }
+
+  #nosotros { padding: 5rem 2rem; gap: 3rem; }
+
+  .equipo-banner { padding: 4rem 2rem; }
+  .equipo-features { grid-template-columns: 1fr; }
+
+  #diferenciales { padding: 5rem 2rem; }
+  .diferenciales-grid { grid-template-columns: repeat(2, 1fr); }
+
+  #proceso { padding: 5rem 2rem; }
+  .process-steps { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+  .process-steps::before { display: none; }
+
+  #pilares { padding: 5rem 2rem; }
+
+  #contacto { padding: 5rem 2rem; gap: 3rem; }
+
+  footer { padding: 2rem; }
+}
+
+/* ============================================
+   RESPONSIVE — MOBILE (max 768px)
+============================================ */
+@media (max-width: 768px) {
+  /* Nav */
+  nav { padding: 1rem 1.5rem; }
+  .nav-links { display: none; }
+  .nav-cta { display: none; }
+  .nav-hamburger { display: flex; }
+
+  /* Hero */
+  #hero { padding: 1.5rem; padding-top: 6rem; min-height: 90vh; }
+  .hero-bg-c1, .hero-bg-c2, .hero-bg-dot { display: none; }
+  .hero-content { max-width: 100%; }
+  .btn-secondary { margin-left: 0; margin-top: 0.75rem; }
+  #hero > div:last-of-type { display: flex; flex-direction: column; align-items: flex-start; }
+
+  /* Marquee */
+  .marquee-wrap { padding: 0.75rem 0; }
+
+  /* Servicios */
+  #servicios { padding: 4rem 1.5rem; }
+  .services-grid { grid-template-columns: 1fr; }
+  .service-card.featured { grid-column: span 1; grid-template-columns: 1fr; }
+
+  /* Nosotros */
+  #nosotros { padding: 4rem 1.5rem; grid-template-columns: 1fr; gap: 2rem; }
+
+  /* Equipo banner */
+  .equipo-banner { padding: 3rem 1.5rem; }
+  .equipo-features { grid-template-columns: 1fr; }
+
+  /* Diferenciales */
+  #diferenciales { padding: 4rem 1.5rem; }
+  .diferenciales-grid { grid-template-columns: 1fr; }
+
+  /* Proceso */
+  #proceso { padding: 4rem 1.5rem; }
+  .process-steps { grid-template-columns: 1fr; gap: 2rem; }
+  .process-steps::before { display: none; }
+
+  /* Pilares / Equipo */
+  #pilares { padding: 4rem 1.5rem; }
+  #pilares > div:last-child { grid-template-columns: 1fr !important; }
+
+  /* Contacto */
+  #contacto { padding: 4rem 1.5rem; grid-template-columns: 1fr; gap: 2.5rem; }
+  .form-row { grid-template-columns: 1fr; }
+
+  /* Footer */
+  footer { padding: 2rem 1.5rem; flex-direction: column; gap: 1rem; text-align: center; }
+  .footer-left { justify-content: center; }
+}
+
+/* Respeta preferencia de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+  .hero-content { animation: none; }
+}
+
+/* ============================================
    ANIMACIONES
 ============================================ */
 @keyframes fadeUp {
