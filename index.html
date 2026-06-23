@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teruka Marketing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ============================================
+     NAVEGACIÓN
+============================================ -->
+<nav>
+  <a href="#" class="nav-logo">
+    <svg viewBox="0 0 40 40" fill="none">
+      <polygon points="20,2 38,32 20,24 2,32" fill="url(#lg1)" opacity="0.95"/>
+      <polygon points="20,10 30,30 20,24" fill="#1a1a2e" opacity="0.7"/>
+      <defs>
+        <linearGradient id="lg1" x1="2" y1="2" x2="38" y2="32" gradientUnits="userSpaceOnUse">
+          <stop offset="0%"   stop-color="#B9A9E3"/>
+          <stop offset="60%"  stop-color="#7356C4"/>
+          <stop offset="100%" stop-color="#34264E"/>
+        </linearGradient>
+      </defs>
+    </svg>
+    <span class="nav-logo-text">TERUK<span>A</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#proceso">Proceso</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <button class="nav-cta" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Hablemos</button>
+</nav>
+
+<!-- ============================================
+     HERO
+============================================ -->
+<section id="hero">
+  <div class="hero-bg-circle hero-bg-c1"></div>
+  <div class="hero-bg-circle hero-bg-c2"></div>
+  <div class="hero-bg-dot"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Agencia de Marketing Digital</p>
+    <h1 class="hero-title">No te vendemos un plan.<br><strong>Construimos el tuyo.</strong></h1>
+    <p class="hero-support">En el mundo de la IA, seguimos siendo <em>personas reales</em> comprometidas con tu marca.</p>
+    <p class="hero-tagline">Estrategia. Creatividad. Resultados.</p>
+    <div>
+      <button class="btn-primary" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Empezar ahora</button>
+      <button class="btn-secondary" onclick="document.getElementById('servicios').scrollIntoView({behavior:'smooth'})">Ver servicios</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     MARQUEE (banda animada)
+============================================ -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span class="marquee-item">Gestión de Redes <span class="marquee-sep">·</span></span>
+    <span class="marquee-item">Meta Ads <span class="marquee-sep">·</span></span>
+    <span class="marquee-item">Google Ads <span class="marquee-sep">·</span></span>
+    <span class="marquee-item">SEO <span class="marquee-sep">·</span></span>
+    <span class="marquee-item">Branding <span class="marquee-sep">·</span></span>
+    <span class="marquee-item">Diseño Gráfico <span class="marquee-sep">·</span></span>
+    <span class="marquee-item">Email Marketing <span class="marquee-sep">·</span></span>
+    <span class="marquee-item">Gestión de Redes <span class="marquee-sep">·</span></span>
+    <span class="marquee-item">Meta Ads <span class="marquee-sep">·</span></span>
+    <span class="marquee-item">Google Ads <span class="marquee-sep">·</span></span>
+    <span class="marquee-item">SEO <span class="marquee-sep">·</span></span>
+    <span class="marquee-item">Branding <span class="marquee-sep">·</span></span>
+    <span class="marquee-item">Diseño Gráfico <span class="marquee-sep">·</span></span>
+    <span class="marquee-item">Email Marketing <span class="marquee-sep">·</span></span>
+  </div>
+</div>
+
+<!-- ============================================
+     SERVICIOS
+============================================ -->
+<section id="servicios">
+  <div class="section-header">
+    <p class="section-label">Nuestros Servicios</p>
+    <h2 class="section-title">Servicios diseñados<br><em>para crecer</em></h2>
+  </div>
+  <div class="services-grid">
+
+    <div class="service-card">
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+      </div>
+      <p class="service-num">01</p>
+      <h3 class="service-name">Gestión de redes sociales</h3>
+      <p class="service-desc">Creación de contenido estratégico orgánico y para ads. Presencia activa y coherente en tus redes, comunidad comprometida, calendario editorial y análisis de resultados para crecer mes a mes.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+      </div>
+      <p class="service-num">02</p>
+      <h3 class="service-name">Meta Ads</h3>
+      <p class="service-desc">Campañas en Facebook e Instagram que llegan a tu audiencia ideal. Segmentación precisa, creatividades que convierten y optimización continua para maximizar cada peso invertido.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      </div>
+      <p class="service-num">03</p>
+      <h3 class="service-name">Google Ads & SEO</h3>
+      <p class="service-desc">Aparecer cuando te buscan. Combinamos anuncios en Google con estrategia orgánica para dominar los resultados de búsqueda y atraer clientes con intención real de compra.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      </div>
+      <p class="service-num">04</p>
+      <h3 class="service-name">Diseño gráfico & branding</h3>
+      <p class="service-desc">Tu identidad visual comunica antes de que hables. Diseñamos marcas memorables y piezas gráficas que representan lo que sos y conectan con tu audiencia.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </div>
+      <p class="service-num">05</p>
+      <h3 class="service-name">Email marketing</h3>
+      <p class="service-desc">Estrategias de email para nutrir tu base de contactos, fidelizar clientes y generar ventas. Campañas personalizadas, automatizaciones y análisis de resultados para maximizar cada envío.</p>
+    </div>
+
+    <div class="service-card" style="display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;background:var(--purple-dark);">
+      <div>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" style="stroke:#B9A9E3"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <p class="service-num" style="color:var(--purple-light)">06</p>
+        <h3 class="service-name" style="color:#fff">¿Tenés un proyecto en mente?</h3>
+        <p class="service-desc" style="color:rgba(255,255,255,0.55);margin-bottom:1.8rem">Contanos qué necesitás y armamos una propuesta a medida para tu marca. Sin compromisos.</p>
+      </div>
+      <button
+        onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})"
+        style="background:var(--purple-main);color:#fff;border:none;padding:0.75rem 1.5rem;font-family:var(--font-body);font-size:0.78rem;letter-spacing:0.08em;font-weight:600;cursor:pointer;border-radius:2px;transition:background 0.2s;"
+        onmouseover="this.style.background='#8a6ad4'"
+        onmouseout="this.style.background='var(--purple-main)'"
+      >Pedir presupuesto →</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================
+     NOSOTROS
+============================================ -->
+<section id="nosotros" style="grid-template-columns:1fr">
+  <div>
+    <p class="about-label">Sobre nosotros</p>
+    <h2 class="about-title">Hacemos marketing que <em>importa</em></h2>
+    <p class="about-text">Somos una <strong>agencia de marketing digital</strong> enfocada en resultados concretos. Trabajamos con marcas que quieren crecer de forma inteligente: combinando creatividad, datos y estrategia para construir presencia digital real.</p>
+    <p class="about-text" style="margin-top:1rem">Cada proyecto es único. Por eso <strong>escuchamos, planificamos y ejecutamos con precisión</strong>. Si tu marca crece, nosotros crecemos. Por eso damos el 200%.</p>
+  </div>
+</section>
+
+<!-- ============================================
+     BANNER EQUIPO
+============================================ -->
+<div class="equipo-banner">
+  <h2 class="equipo-banner-title">Somos el equipo de marketing<br>que tu empresa <strong>necesita</strong></h2>
+  <p class="equipo-banner-sub">Trabajamos como una extensión de tu negocio — con el expertise de una agencia y la dedicación de un equipo interno.</p>
+  <div class="equipo-features">
+    <div class="equipo-feature">
+      <div class="equipo-feature-icon">◈</div>
+      <div class="equipo-feature-title">Nos integramos a tu negocio</div>
+      <div class="equipo-feature-desc">Aprendemos tu industria, tu tono y tus objetivos. Actuamos como parte de tu equipo, no como un proveedor externo.</div>
+    </div>
+    <div class="equipo-feature">
+      <div class="equipo-feature-icon">◈</div>
+      <div class="equipo-feature-title">Expertise sin estructura fija</div>
+      <div class="equipo-feature-desc">Accedés a un equipo completo — estrategas, diseñadores, especialistas en pauta — sin los costos de armar un área interna.</div>
+    </div>
+    <div class="equipo-feature">
+      <div class="equipo-feature-icon">◈</div>
+      <div class="equipo-feature-title">Comprometidos con tus resultados</div>
+      <div class="equipo-feature-desc">Si tu marca crece, nosotros crecemos. Por eso nos esforzamos al 200% en cada proyecto que acompañamos.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================
+     DIFERENCIALES
+============================================ -->
+<section id="diferenciales">
+  <div class="section-header">
+    <p class="section-label">Por qué elegirnos</p>
+    <h2 class="section-title">Todo lo que una marca necesita<br><em>para crecer</em></h2>
+  </div>
+  <div class="diferenciales-grid">
+    <div class="diferencial-card">
+      <div class="dif-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+      <h3 class="dif-name">Presupuesto sin sorpresas</h3>
+      <p class="dif-desc">Sabés exactamente en qué se invierte cada peso. Sin costos ocultos, con total transparencia.</p>
+    </div>
+    <div class="diferencial-card">
+      <div class="dif-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+      <h3 class="dif-name">Atención personalizada</h3>
+      <p class="dif-desc">Un equipo dedicado a tu marca que te acompaña y se adapta a tus necesidades en cada etapa.</p>
+    </div>
+    <div class="diferencial-card">
+      <div class="dif-icon"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+      <h3 class="dif-name">Resultados reales</h3>
+      <p class="dif-desc">Cada acción tiene métricas claras. Sabés qué estamos haciendo y qué está funcionando, siempre.</p>
+    </div>
+    <div class="diferencial-card">
+      <div class="dif-icon"><svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2v-4M9 21H5a2 2 0 0 1-2-2v-4m0 0h18"/></svg></div>
+      <h3 class="dif-name">Testeos continuos</h3>
+      <p class="dif-desc">Testeamos siempre. Buscamos lo mejor para cada marca, porque no todas son iguales.</p>
+    </div>
+    <div class="diferencial-card">
+      <div class="dif-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+      <h3 class="dif-name">Reportes mensuales</h3>
+      <p class="dif-desc">Informes claros, en lenguaje simple, para que entiendas el avance sin necesitar ser experto.</p>
+    </div>
+    <div class="diferencial-card">
+      <div class="dif-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+      <h3 class="dif-name">Respuesta rápida</h3>
+      <p class="dif-desc">Estamos presentes cuando tu marca nos necesita. Siempre hay alguien del otro lado.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     PROCESO
+============================================ -->
+<section id="proceso">
+  <div class="section-header">
+    <p class="section-label">Cómo trabajamos</p>
+    <h2 class="section-title">Un proceso simple,<br><em>resultados claros</em></h2>
+  </div>
+  <div class="process-steps">
+    <div class="process-step">
+      <div class="step-circle">01</div>
+      <h4 class="step-title">Diagnóstico</h4>
+      <p class="step-desc">Entendemos tu negocio, tu competencia y tus objetivos reales.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-circle">02</div>
+      <h4 class="step-title">Estrategia</h4>
+      <p class="step-desc">Diseñamos un plan a medida con acciones concretas y métricas claras.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-circle">03</div>
+      <h4 class="step-title">Ejecución</h4>
+      <p class="step-desc">Implementamos, lanzamos y gestionamos cada acción con precisión.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-circle">04</div>
+      <h4 class="step-title">Optimización</h4>
+      <p class="step-desc">Medimos, aprendemos y mejoramos continuamente para maximizar resultados.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     EQUIPO (pilares / personas)
+============================================ -->
+<section id="pilares" style="background:var(--white);padding:6rem 3rem">
+  <div class="section-header">
+    <p class="section-label">Quiénes somos</p>
+    <h2 class="section-title">Las personas detrás<br><em>de tu estrategia</em></h2>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--gray-mid);margin-top:3.5rem">
+
+    <div style="background:var(--white);padding:3rem 2.5rem;position:relative;overflow:hidden;transition:background 0.3s"
+         onmouseover="this.style.background='var(--purple-faint)'"
+         onmouseout="this.style.background='var(--white)'">
+      <div style="width:56px;height:56px;border-radius:50%;background:var(--purple-ultra);display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;font-family:var(--font-display);font-size:1.4rem;font-weight:300;color:var(--purple-main)">L</div>
+      <p style="font-size:0.7rem;letter-spacing:0.2em;color:var(--purple-main);text-transform:uppercase;font-weight:600;margin-bottom:0.4rem">Fundadora · Estrategia Digital</p>
+      <h3 style="font-family:var(--font-display);font-size:1.8rem;font-weight:300;margin-bottom:1.2rem;color:var(--black)">Luz</h3>
+      <p style="color:var(--gray-text);line-height:1.9;font-size:0.9rem">Licenciada en Publicidad especializada en marketing digital, con 10 años de experiencia en el mundo de las marcas. Empezó su carrera del lado del cliente, trabajando el marketing desde adentro de grandes empresas — y hace una década cruzó al lado del servicio para poder acompañar a más marcas con lo que más le apasiona: construir estrategias que realmente funcionen.<br><br>Teruka nació de esa convicción: que cada marca merece atención real, estrategia pensada para ella y alguien que se involucre de verdad con su crecimiento.</p>
+    </div>
+
+    <div style="background:var(--white);padding:3rem 2.5rem;position:relative;overflow:hidden;transition:background 0.3s"
+         onmouseover="this.style.background='var(--purple-faint)'"
+         onmouseout="this.style.background='var(--white)'">
+      <div style="width:56px;height:56px;border-radius:50%;background:var(--purple-ultra);display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;font-family:var(--font-display);font-size:1.4rem;font-weight:300;color:var(--purple-main)">P</div>
+      <p style="font-size:0.7rem;letter-spacing:0.2em;color:var(--purple-main);text-transform:uppercase;font-weight:600;margin-bottom:0.4rem">Co-fundadora · Imagen & Contenido</p>
+      <h3 style="font-family:var(--font-display);font-size:1.8rem;font-weight:300;margin-bottom:1.2rem;color:var(--black)">Paula</h3>
+      <p style="color:var(--gray-text);line-height:1.9;font-size:0.9rem">Paula es co-founder de Teruka y tiene 5 años de experiencia trabajando con marcas de todo tipo y rubro. Su gran talento es encontrar el potencial que cada una tiene para comunicar. Sabe leer entre líneas, entender lo que el cliente necesita antes de que lo diga, y traducirlo en contenido que conecta de verdad con las personas.<br><br>Su mirada está siempre actualizada: conoce las tendencias, sabe adaptarse y tiene la cercanía que hace que trabajar con ella se sienta como trabajar con alguien de tu propio equipo.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================
+     CONTACTO
+============================================ -->
+<section id="contacto">
+  <div class="contact-left">
+    <p class="section-label">Contacto</p>
+    <h2 class="contact-title">¿Listo para <em>crecer</em>?</h2>
+    <p class="contact-sub">Contanos sobre tu proyecto y te respondemos en menos de 24 horas. Una persona real del equipo Teruka va a leer tu mensaje y acompañarte desde el primer momento.</p>
+    <p class="contact-tagline">Estrategia. Creatividad. Resultados.</p>
+  </div>
+  <div>
+    <form class="contact-form" onsubmit="handleSubmit(event)">
+      <div class="form-row">
+        <div class="form-field"><label>Nombre</label><input type="text" placeholder="Tu nombre" id="f-nombre"></div>
+        <div class="form-field"><label>Email</label><input type="email" placeholder="tu@email.com" id="f-email"></div>
+      </div>
+      <div class="form-field">
+        <label>Servicio de interés</label>
+        <select id="f-servicio">
+          <option value="">Seleccioná un servicio</option>
+          <option>Gestión de redes sociales</option>
+          <option>Meta Ads</option>
+          <option>Google Ads / SEO</option>
+          <option>Diseño gráfico / Branding</option>
+          <option>Email marketing</option>
+          <option>Estrategia integral</option>
+        </select>
+      </div>
+      <div class="form-field"><label>Mensaje</label><textarea placeholder="Contanos sobre tu proyecto..." id="f-mensaje"></textarea></div>
+      <button type="submit" class="form-submit">Enviar consulta →</button>
+    </form>
+  </div>
+</section>
+
+<!-- ============================================
+     FOOTER
+============================================ -->
+<footer>
+  <div class="footer-left">
+    <svg viewBox="0 0 40 40" fill="none">
+      <polygon points="20,2 38,32 20,24 2,32" fill="url(#fg1)" opacity="0.7"/>
+      <polygon points="20,10 30,30 20,24" fill="#1a1a2e" opacity="0.5"/>
+      <defs>
+        <linearGradient id="fg1" x1="2" y1="2" x2="38" y2="32" gradientUnits="userSpaceOnUse">
+          <stop offset="0%"   stop-color="#B9A9E3"/>
+          <stop offset="100%" stop-color="#7356C4"/>
+        </linearGradient>
+      </defs>
+    </svg>
+    <span class="footer-logo-text">TERUK<span>A</span> MARKETING</span>
+  </div>
+  <span class="footer-tagline">Estrategia. Creatividad. Resultados.</span>
+  <span class="footer-copy">© 2025 Teruka. Todos los derechos reservados.</span>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
