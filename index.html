@@ -346,12 +346,12 @@
   <div>
     <form class="contact-form" id="contact-form" onsubmit="handleSubmit(event)">
       <div class="form-row">
-        <div class="form-field"><label>Nombre</label><input type="text" placeholder="Tu nombre" id="f-nombre"></div>
-        <div class="form-field"><label>Email</label><input type="email" placeholder="tu@email.com" id="f-email"></div>
+        <div class="form-field"><label>Nombre</label><input type="text" name="nombre" placeholder="Tu nombre" id="f-nombre"></div>
+        <div class="form-field"><label>Email</label><input type="email" name="email" placeholder="tu@email.com" id="f-email"></div>
       </div>
       <div class="form-field">
         <label>Servicio de interés</label>
-        <select id="f-servicio">
+        <select name="servicio" id="f-servicio">
           <option value="">Seleccioná un servicio</option>
           <option>Gestión de redes sociales</option>
           <option>Meta Ads</option>
@@ -361,7 +361,7 @@
           <option>Estrategia integral</option>
         </select>
       </div>
-      <div class="form-field"><label>Mensaje</label><textarea placeholder="Contanos sobre tu proyecto..." id="f-mensaje"></textarea></div>
+      <div class="form-field"><label>Mensaje</label><textarea name="mensaje" placeholder="Contanos sobre tu proyecto..." id="f-mensaje"></textarea></div>
       <button type="submit" class="form-submit" id="form-btn">Enviar consulta →</button>
       <p id="form-msg" style="display:none;text-align:center;font-size:0.88rem;padding:0.75rem;border-radius:2px;margin-top:0.5rem"></p>
     </form>
